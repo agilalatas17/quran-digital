@@ -1,0 +1,81 @@
+/* Mobile First */
+
+.hero-section {
+  position: relative;
+  /* width: 100%; */
+  background-color: rgba(163, 187, 243, 0.2);
+  height: 92vh;
+  background-image: url("../../assets/image/siluet_masjid.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+}
+
+.hero-container {
+  padding-right: 16px;
+  padding-left: 16px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.hero-text p {
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.16px;
+  color: #6c757d;
+}
+
+.hero-text p > span {
+  font-weight: 700;
+}
+
+.hero-image {
+  position: absolute;
+  /* bottom: -55px; */
+  bottom: 0;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ==================================
+=========== Desktop Style ===========
+=====================================*/
+@media (min-width: 1024px) {
+  .hero-container {
+    height: inherit;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-text {
+    padding: 0;
+    width: 600px;
+    margin-bottom: 120px;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    letter-spacing: 0.24px;
+  }
+
+  .hero-image {
+    right: 0;
+  }
+}
